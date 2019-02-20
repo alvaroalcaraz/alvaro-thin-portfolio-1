@@ -22,7 +22,7 @@ img:hover {
   line-height: 1.4em;
 }
 .banner{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
   height: 100vh; 
   background: #3c493f;
   color: black;
@@ -34,8 +34,8 @@ img:hover {
 }
 
 .page-header {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
     justify-content: center;
     padding: 10px 20px;
     background: #3c493f;
@@ -59,7 +59,7 @@ img:hover {
 }
 .inline-list li{
     display: inline-block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* --- history --- */
@@ -97,6 +97,7 @@ img:hover {
 #contact{
   background: #f0f7f4;
   color: black;
+  justify-content: center;
 }
 
 /* ---- reset ---- */
@@ -113,7 +114,7 @@ html {
   body {
     background: #3c493f;
     color: #111;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 160%;
   }
