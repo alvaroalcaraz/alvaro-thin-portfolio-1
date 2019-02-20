@@ -164,7 +164,7 @@ html {
   }
 
 
-  /* ---- grid ---- */
+  /* ---- grid list ---- */
   
   .grid-list{
     display: grid;
@@ -178,6 +178,18 @@ html {
 
   .grid-list img{
     display: block;
+  }
+
+   /* ---- grid text ---- */
+  
+   .grid-text-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+  }
+
+  .grid-text-list li{
+    position: relative;
   }
   
   /* ---- section ---- */
