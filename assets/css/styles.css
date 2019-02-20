@@ -1,6 +1,6 @@
 
 a:hover {
-    color:darkgray
+    color:black;
 }
 
 img{
@@ -17,10 +17,18 @@ img:hover {
 
 .banner h1{
   font-family: 'Playfair Display', serif;
-  font-size: 60px;
+  font-size: 80px;
   margin-bottom: 5px;
   line-height: 1.4em;
 }
+
+.banner h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+  line-height: 1.4em;
+}
+
 .banner{
   font-family: 'Playfair Display', serif;
   height: 100vh; 
@@ -75,9 +83,8 @@ img:hover {
   color: #f0f7f4;
 }
 
-.flex-list{
+.inline-list{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .flex-list li{
@@ -157,8 +164,21 @@ html {
   }
 
 
-  /* ---- components ---- */
+  /* ---- grid ---- */
   
+  .grid-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .grid-list li{
+    position: relative;
+  }
+
+  .grid-list img{
+    display: block;
+  }
   
   /* ---- section ---- */
 
