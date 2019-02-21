@@ -17,7 +17,7 @@ img:hover {
 
 .banner h1{
   font-family: 'Playfair Display', serif;
-  color:  black;
+  color:  whitesmoke;
   font-size: 80px;
   margin-bottom: 5px;
   line-height: 1.4em;
@@ -25,7 +25,7 @@ img:hover {
 
 .banner h2{
   font-family: 'Playfair Display', serif;
-  color: black;
+  color: whitesmoke;
   font-size: 30px;
   margin-bottom: 5px;
   line-height: 1.4em;
@@ -49,7 +49,7 @@ img:hover {
     justify-content: center;
     padding: 10px 20px;
     background: #b3bfb8;
-    color: black;
+    color: whitesmoke;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +62,8 @@ img:hover {
     padding: 5px 10px;
 }
 .page-header a:hover {
-    color:grey
+    color:grey;
+    transition: color: 
 }
 .main-navigation ul li{
     display: inline-block
@@ -76,6 +77,8 @@ img:hover {
 #about{
   background: #f0f7f4;
   color: black;
+  
+  height: 100vh;
 }
 
 /* --- portfolio --- */
@@ -103,10 +106,33 @@ img:hover {
 
 }
 
+/* --- contact --- */
+
 #contact{
   background: #f0f7f4;
   color: black;
   justify-content: center;
+}
+
+/* --- component --- */
+
+.btn {
+  display: inline-block;
+  background: black;
+  padding: 2em;
+  color: whitesmoke;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all .5s ease;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.btn:hover{
+  background: grey;
+  color: black;
 }
 
 /* ---- reset ---- */
@@ -232,4 +258,15 @@ html {
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
   
+  }
+
+  /* --- Animation functions --- */
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
