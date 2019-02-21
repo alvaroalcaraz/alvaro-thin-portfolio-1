@@ -21,6 +21,9 @@ img:hover {
   font-size: 80px;
   margin-bottom: 5px;
   line-height: 1.4em;
+  animation-name: bounce;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
 }
 
 .banner h2{
@@ -43,6 +46,12 @@ img:hover {
   
 }
 
+
+ /* ---- header ---- */
+ .page-header h1{
+  font-size:1em;
+}
+
 .page-header {
     font-family: 'Playfair Display', serif;
     font-size: 15px;
@@ -57,17 +66,22 @@ img:hover {
     display: flex;
     z-index: 10;
 }
+
 .page-header a{
     color: white;
     padding: 5px 10px;
+    font-size: 20px;
 }
+
 .page-header a:hover {
     color:grey;
     transition: color: 
 }
+
 .main-navigation ul li{
     display: inline-block
 }
+
 .inline-list li{
     display: inline-block;
     font-family: 'Playfair Display', serif;
@@ -124,10 +138,6 @@ img:hover {
   font-weight: 500;
   border-radius: 6px;
   transition: all .5s ease;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
 }
 
 .btn:hover{
@@ -186,11 +196,6 @@ html {
   section:nth-of-type(odd){
       color: white
   }
-  /* ---- header ---- */
-  .page-header h1{
-    font-size:1em;
-  }
-
 
   /* ---- grid list ---- */
   
@@ -226,6 +231,9 @@ html {
     max-width: 90%;
   }
 
+
+  /* ---- DEVICES & ANIMATIONS ---- */
+  
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
@@ -267,6 +275,21 @@ html {
       opacity: 0;
     }
     100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(0.1);
+      opacity: 1;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
       opacity: 1;
     }
   }
