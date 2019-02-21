@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
     <title>Álvaro Thin Porfolio</title>
 </head>
 
@@ -35,31 +38,28 @@
                 </section>
         </section>
 
-        <!-- History section -->
+                <!-- History section grid -->
 
-        <section id="about">
-            <div class="container">
-                <ul class="grid-text-list">
-                    <li>
-                        <h3>Some history</h3>
-                    </li>
-                    <li>
-                        <p>It was 2009 and I was living in Cádiz, where I was born and raise, since always
-                            and my family decided to move to Barcelona.
-                            At that moment my life was broken and lost. I didn't know how important will be that change for my life.</p>
-                    </li>
-                    <li>
-                        <p>10 years after I was already being living not only in Barcelona but London, 
-                            Strasbourg and Charleroi, and I decided to change my career and study UX/UI Design, I already had a lot of experience in Tourism and Customer
-                            service and that help me empathize more with the users and make me work harder to make their lives easier.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
+                <section id="about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                    <div class="container">
+                        <div class="grid-container">
+                            <div class="Tittle"><u>Some history</u></div>
+                            
+                            <div class="Pic"><img src="assets/images/bannerback3.jpg"></div>
+                            
+                            <div class="Text2 Text-style">10 years after I was already being living not only in Barcelona but London, 
+                                Strasbourg and Charleroi, and I decided to change my career and study UX/UI Design, I already had a lot of experience in Tourism and Customer
+                                service and that help me empathize more with the users and make me work harder to make their lives easier.</div>
+                            <div class="Text1 Text-style">It was 2009 and I was living in Cádiz, where I was born and raise, since always
+                                and my family decided to move to Barcelona.
+                                At that moment my life was broken and lost. I didn't know how important will be that change for my life.</div>
+                          </div>
+                    </div>
+                </section>
+
                 <!-- Work Grid section -->
 
-                <section id="work">
+                <section id="work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="container">
                         <h3>My last projects</h3>
                         <p class="section-intro">If you are insterested in see more about my projects, simply click on the
@@ -70,8 +70,6 @@
                                 <div class="portfolio-tittle">
                                     <a href="#">
                                         <h2>Wellness App</h2>
-                                        <a href="#">
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                                         </a>
                                 </div>
                             </li>
@@ -80,8 +78,6 @@
                                 <div class="portfolio-tittle">
                                     <a href="#">
                                         <h2>inVision Build Mode</h2>
-                                        <a href="#">
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                                         </a>
                                 </div>
                             </li>
@@ -90,8 +86,6 @@
                                 <div class="portfolio-tittle">
                                     <a href="#">
                                         <h2>HR Wep App</h2>
-                                        <a href="#">
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                                         </a>
                                 </div>
                             </li>
@@ -100,8 +94,6 @@
                                 <div class="portfolio-tittle">
                                     <a href="#">
                                         <h2>Project 4</h2>
-                                        <a href="#">
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                                         </a>
                                 </div>
                             </li>
@@ -114,22 +106,27 @@
             <div class="container">
                 <h3>Contact</h3>
                 <p class="section-intro">Do not hesitate, drop me a line!</p>
-                <p><a class="btn" href="mailto:hello@hello.com">hello@hello.com</a></p>
+                <p><a class="btn" href="mailto:hello@alvarothin.com">hello@alvarothin.com</a></p>
             </div>
         </section>
 
     </main>
-    <footer class="main-footer">
-        <p class="section-intro">© <a href="#">Álvaro Thin 2019</a></p>
-        <ul class="inline-list">
-            <li><a href="https://www.linkedin.com/in/alvaro-alcaraz/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://medium.com/@alvaroalcaraz" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-medium"></i></a></li>
-            <li><a href="https://www.instagram.com/alvarothin/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a></li>
-        </ul>
+    <footer>
+            <ul class="inline-list">
+                    <li><a href="https://www.linkedin.com/in/alvaro-alcaraz/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://medium.com/@alvaroalcaraz" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-medium"></i></a></li>
+                    <li><a href="https://www.instagram.com/alvarothin/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a></li>
+            </ul>
+        <p class="section-intro">© Álvaro Thin 2019</p>
+
     </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

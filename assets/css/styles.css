@@ -15,15 +15,17 @@ img:hover {
     
 }   
 
+/* --- Banner --- */
+
 .banner h1{
   font-family: 'Playfair Display', serif;
   color:  whitesmoke;
   font-size: 80px;
   margin-bottom: 5px;
   line-height: 1.4em;
-  animation-name: bounce;
+  /* animation-name: bounce;
   animation-duration: 1.7s;
-  animation-delay: 1s;
+  animation-delay: 1s; */
 }
 
 .banner h2{
@@ -34,7 +36,7 @@ img:hover {
   line-height: 1.4em;
 }
 
-.banner{
+.banner {
   font-family: 'Playfair Display', serif;
   height: 100vh; 
   background: #b3bfb8;
@@ -47,7 +49,7 @@ img:hover {
 }
 
 
- /* ---- header ---- */
+ /* ---- Header ---- */
  .page-header h1{
   font-size:1em;
 }
@@ -67,7 +69,7 @@ img:hover {
     z-index: 10;
 }
 
-.page-header a{
+.page-header a {
     color: white;
     padding: 5px 10px;
     font-size: 20px;
@@ -75,10 +77,10 @@ img:hover {
 
 .page-header a:hover {
     color:grey;
-    transition: color: 
+    transition: color;
 }
 
-.main-navigation ul li{
+.main-navigation ul li {
     display: inline-block
 }
 
@@ -87,53 +89,111 @@ img:hover {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- history --- */
+/* --- History --- */
 #about{
   background: #f0f7f4;
   color: black;
-  
-  height: 100vh;
+  /* height: 80vh; */
 }
 
-/* --- portfolio --- */
+/* grid history */
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "Tittle . ." "Pic Text1 Text1" "Pic Text2 Text2" "Pic Text2 Text2";
+    }
+    
+  .Tittle { 
+      grid-area: Tittle;
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      padding: 30px 0;
+      text-align: center;
+    }
+    
+  .Pic { 
+      grid-area: Pic;
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+  .Text1 { 
+      grid-area: Text1; 
+    }
+    
+  .Text2 { 
+      grid-area: Text2; 
+    }
+    
+    .Text-style {
+      padding: 10px 100px;
+      font-size: 1.3em;
+    }
+
+/* --- Work --- */
 
 #work{
   background: #b3bfb8;
-  color: black;
+  color: whitesmoke;
 }
 
-.inline-list{
-  display: flex;
-}
-
-.flex-list li{
+.flex-list li {
   flex-basis: 100%;
   position: relative;
 }
 
-.portfolio-tittle{
+.portfolio-tittle {
+  text-align: center;
+  color: whitesmoke;
   position: absolute;
   left: 50%;
   top: 50%;
-  border: 1px solid black;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  background-color: rgba(206, 206, 206, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+
 
 }
 
-/* --- contact --- */
+
+.portfolio-tittle a {
+  color: whitesmoke;
+}
+/* --- Contact --- */
 
 #contact{
+  text-align: center;
+  padding: 30px;
   background: #f0f7f4;
   color: black;
   justify-content: center;
+  align-content: center;
+  /* height: 35vh; */
 }
+
+
+/* --- Footer --- */
+
+footer{
+  text-align: center;
+  color: whitesmoke;
+}
+
+footer a{
+  color: whitesmoke;
+}
+
 
 /* --- component --- */
 
 .btn {
   display: inline-block;
+  font-family: 'Playfair Display', serif;
   background: black;
-  padding: 2em;
+  padding: 1.5em;
   color: whitesmoke;
   font-weight: 500;
   border-radius: 6px;
@@ -159,7 +219,8 @@ html {
   body {
     background: #b3bfb8;
     color: #111;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-style: regular;
     font-size: 16px;
     line-height: 160%;
   }
@@ -178,9 +239,10 @@ html {
   /* ---- layout ---- */
   
   .main-footer {
+    text-align: center;
     background: #111;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
   }
   
@@ -200,10 +262,12 @@ html {
   /* ---- grid list ---- */
   
   .grid-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 10px;
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "img1 img2 img3 img4";
+      grid-gap: 15px;
+    }
 
   .grid-list li{
     position: relative;
@@ -215,7 +279,7 @@ html {
 
    /* ---- grid text ---- */
   
-   .grid-text-list{
+   /* .grid-text-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 50px;
@@ -223,7 +287,7 @@ html {
 
   .grid-text-list li{
     position: relative;
-  }
+  } */
   
   /* ---- section ---- */
 
@@ -233,7 +297,7 @@ html {
 
 
   /* ---- DEVICES & ANIMATIONS ---- */
-  
+
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
@@ -244,7 +308,6 @@ html {
   @media (min-width: 768px) {
     .section-intro {
       text-align: center;
-      max-width: 50%;
       margin: 0 auto 30px;
     }
   
@@ -293,3 +356,10 @@ html {
       opacity: 1;
     }
   }
+
+
+/* example */
+
+.fab {
+  font-size: 22px;
+}
